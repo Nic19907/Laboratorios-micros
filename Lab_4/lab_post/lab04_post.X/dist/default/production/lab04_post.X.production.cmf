@@ -1,0 +1,273 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/lab04_post.o
+code CODE 0 0 0 10D 2
+udata_bank0 BANK0 1 20 20 4 1
+udata_shr COMMON 1 70 70 2 1
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 24-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 24-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 10D-1FFF 2
+ENTRY 10D-1FFF 2
+IDLOC 2000-2003 2
+CODE 10D-1FFF 2
+COMMON 72-7F 1
+EEDATA 2100-21FF 2
+STRCODE 10D-1FFF 2
+STRING 10D-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/lab04_post.o
+0 code CODE >81:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+0 code CODE >83:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+1 code CODE >88:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+4 code CODE >90:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+5 code CODE >91:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+6 code CODE >92:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+7 code CODE >95:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+8 code CODE >96:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+9 code CODE >97:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+A code CODE >98:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+B code CODE >102:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+C code CODE >103:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+D code CODE >104:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+E code CODE >105:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+F code CODE >106:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+10 code CODE >112:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+12 code CODE >113:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+13 code CODE >114:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+14 code CODE >115:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+15 code CODE >116:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+16 code CODE >117:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+17 code CODE >118:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+18 code CODE >119:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+19 code CODE >120:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+1A code CODE >123:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+1C code CODE >123:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+1D code CODE >123:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+1E code CODE >123:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+1F code CODE >124:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+20 code CODE >125:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+21 code CODE >126:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+22 code CODE >127:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+23 code CODE >128:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+24 code CODE >129:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+25 code CODE >130:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+26 code CODE >131:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+27 code CODE >133:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+28 code CODE >136:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+29 code CODE >141:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+40 code CODE >170:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+41 code CODE >171:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+42 code CODE >172:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+43 code CODE >173:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+44 code CODE >174:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+45 code CODE >175:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+47 code CODE >181:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+48 code CODE >182:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+49 code CODE >187:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+4B code CODE >188:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+4C code CODE >189:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+4D code CODE >191:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+4F code CODE >192:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+50 code CODE >193:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+51 code CODE >194:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+52 code CODE >196:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+53 code CODE >197:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+54 code CODE >198:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+55 code CODE >199:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+56 code CODE >200:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+57 code CODE >202:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+59 code CODE >203:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+5A code CODE >204:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+5B code CODE >205:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+5C code CODE >206:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+5D code CODE >209:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+5F code CODE >210:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+60 code CODE >211:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+61 code CODE >212:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+62 code CODE >213:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+63 code CODE >214:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+64 code CODE >217:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+66 code CODE >218:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+67 code CODE >219:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+68 code CODE >221:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+6A code CODE >222:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+6B code CODE >223:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+6C code CODE >224:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+6D code CODE >227:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+6E code CODE >228:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+6F code CODE >229:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+70 code CODE >232:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+71 code CODE >233:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+72 code CODE >234:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+73 code CODE >237:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+75 code CODE >238:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+76 code CODE >239:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+77 code CODE >240:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+78 code CODE >241:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+79 code CODE >242:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+7A code CODE >243:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+7B code CODE >249:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+7C code CODE >250:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+7D code CODE >251:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+7E code CODE >254:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+7F code CODE >255:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+80 code CODE >256:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+81 code CODE >259:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+82 code CODE >260:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+83 code CODE >261:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+84 code CODE >262:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+85 code CODE >263:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+86 code CODE >271:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+87 code CODE >272:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+88 code CODE >273:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+89 code CODE >274:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+8A code CODE >275:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+8B code CODE >278:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+8C code CODE >279:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+8D code CODE >280:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+8E code CODE >281:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+8F code CODE >282:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+90 code CODE >283:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+91 code CODE >284:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+92 code CODE >287:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+93 code CODE >290:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+94 code CODE >291:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+95 code CODE >292:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+96 code CODE >293:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+97 code CODE >294:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+98 code CODE >295:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+99 code CODE >298:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+9A code CODE >299:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+9B code CODE >300:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+9C code CODE >301:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+9D code CODE >302:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+9E code CODE >303:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+100 code CODE >143:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+101 code CODE >144:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+102 code CODE >146:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+103 code CODE >147:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+104 code CODE >148:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+105 code CODE >149:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+106 code CODE >150:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+107 code CODE >151:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+108 code CODE >152:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+109 code CODE >153:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+10A code CODE >154:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+10B code CODE >155:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+10C code CODE >156:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+10D code CODE >167:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Lab_4\lab_post\lab04_post.X\lab04_post.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 10D 0 ABS 0 - -
+__Hspace_1 72 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresVect 0 0 ABS 0 resVect -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 72 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 0 0 ABS 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 4 1
+udata_shr 1 70 70 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
