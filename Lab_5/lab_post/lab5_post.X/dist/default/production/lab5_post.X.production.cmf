@@ -1,0 +1,319 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/lab05_post_int.o
+code CODE 0 0 0 BD 2
+intVect code 0 0 0 114 2
+udata_bank0 BANK0 1 20 20 D 1
+udata_shr COMMON 1 70 70 4 1
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 2D-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 2D-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 114-1FFF 2
+ENTRY 114-1FFF 2
+IDLOC 2000-2003 2
+CODE 114-1FFF 2
+COMMON 74-7F 1
+EEDATA 2100-21FF 2
+STRCODE 114-1FFF 2
+STRING 114-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/lab05_post_int.o
+0 intVect code >123:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+4 intVect code >125:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+5 intVect code >126:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+6 intVect code >127:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+7 intVect code >130:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+8 intVect code >131:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+9 intVect code >135:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+A intVect code >136:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+B intVect code >137:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+C intVect code >138:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+D intVect code >139:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+E intVect code >149:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+10 intVect code >149:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+11 intVect code >149:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+12 intVect code >149:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+13 intVect code >150:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+14 intVect code >153:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+15 intVect code >154:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+16 intVect code >155:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+17 intVect code >158:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+18 intVect code >159:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+19 intVect code >160:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+1A intVect code >163:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+1B intVect code >164:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+1C intVect code >165:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+1D intVect code >166:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+1E intVect code >167:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+1F intVect code >168:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+20 intVect code >171:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+21 intVect code >172:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+22 intVect code >173:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+23 intVect code >174:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+24 intVect code >175:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+25 intVect code >176:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+26 intVect code >179:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+27 intVect code >180:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+28 intVect code >181:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+29 intVect code >182:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+2A intVect code >183:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+2B intVect code >186:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+2C intVect code >192:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+100 intVect code >194:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+101 intVect code >195:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+102 intVect code >196:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+103 intVect code >197:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+104 intVect code >198:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+105 intVect code >199:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+106 intVect code >200:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+107 intVect code >201:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+108 intVect code >202:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+109 intVect code >203:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+10A intVect code >204:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+10B intVect code >205:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+10C intVect code >206:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+10D intVect code >207:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+10E intVect code >208:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+10F intVect code >209:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+110 intVect code >210:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+111 intVect code >211:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+112 intVect code >212:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+113 intVect code >213:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+0 code CODE >116:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+0 code CODE >118:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+1 code CODE >219:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+40 code CODE >222:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+41 code CODE >223:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+42 code CODE >224:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+43 code CODE >225:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+44 code CODE >226:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+46 code CODE >232:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+47 code CODE >233:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+48 code CODE >234:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+49 code CODE >235:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+4A code CODE >236:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+4B code CODE >242:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+4D code CODE >243:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+4E code CODE >244:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+4F code CODE >246:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+51 code CODE >247:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+52 code CODE >248:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+53 code CODE >249:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+54 code CODE >250:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+55 code CODE >251:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+56 code CODE >252:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+57 code CODE >255:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+59 code CODE >256:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+5A code CODE >257:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+5B code CODE >258:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+5C code CODE >259:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+5D code CODE >260:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+5E code CODE >261:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+5F code CODE >262:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+60 code CODE >265:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+62 code CODE >266:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+63 code CODE >267:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+64 code CODE >268:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+65 code CODE >269:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+66 code CODE >270:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+67 code CODE >273:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+69 code CODE >274:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+6A code CODE >275:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+6B code CODE >276:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+6C code CODE >277:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+6D code CODE >278:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+6E code CODE >279:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+6F code CODE >282:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+70 code CODE >283:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+71 code CODE >284:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+72 code CODE >285:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+73 code CODE >291:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+74 code CODE >292:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+75 code CODE >293:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+76 code CODE >294:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+77 code CODE >296:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+78 code CODE >297:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+79 code CODE >298:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+7A code CODE >301:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+7B code CODE >302:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+7C code CODE >303:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+7D code CODE >304:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+7E code CODE >305:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+7F code CODE >308:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+80 code CODE >309:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+81 code CODE >310:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+82 code CODE >311:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+83 code CODE >312:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+84 code CODE >313:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+85 code CODE >316:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+86 code CODE >317:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+87 code CODE >319:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+88 code CODE >320:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+89 code CODE >321:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+8A code CODE >324:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+8B code CODE >325:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+8C code CODE >327:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+8D code CODE >328:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+8E code CODE >329:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+8F code CODE >335:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+90 code CODE >336:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+91 code CODE >337:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+92 code CODE >339:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+93 code CODE >340:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+94 code CODE >341:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+95 code CODE >343:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+96 code CODE >344:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+97 code CODE >345:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+98 code CODE >346:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+99 code CODE >349:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+9A code CODE >350:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+9B code CODE >350:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+9C code CODE >350:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+9D code CODE >350:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+9E code CODE >350:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+9F code CODE >350:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+A0 code CODE >350:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+A1 code CODE >350:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+A2 code CODE >350:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+A3 code CODE >350:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+A4 code CODE >350:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+A5 code CODE >350:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+A6 code CODE >351:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+A7 code CODE >352:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+A8 code CODE >353:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+A9 code CODE >354:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+AA code CODE >355:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+AB code CODE >358:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+AC code CODE >359:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+AD code CODE >359:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+AE code CODE >359:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+AF code CODE >359:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+B0 code CODE >359:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+B1 code CODE >359:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+B2 code CODE >359:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+B3 code CODE >359:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+B4 code CODE >359:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+B5 code CODE >359:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+B6 code CODE >359:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+B7 code CODE >359:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+B8 code CODE >360:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+B9 code CODE >361:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+BA code CODE >362:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+BB code CODE >363:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+BC code CODE >364:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_5\lab_post\lab5_post.X\lab05_post_int.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 114 0 ABS 0 - -
+__Hspace_1 74 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresVect 0 0 ABS 0 resVect -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 74 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 0 0 ABS 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__LintVect 0 0 code 0 intVect -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+__HintVect 228 0 code 0 intVect -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 D 1
+udata_shr 1 70 70 4 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
