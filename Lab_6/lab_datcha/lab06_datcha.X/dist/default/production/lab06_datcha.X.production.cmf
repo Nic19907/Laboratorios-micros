@@ -1,0 +1,224 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/tmr2_intermitente.o
+code CODE 0 0 0 87 2
+intVect code 0 0 0 19 2
+udata_bank0 BANK0 1 20 20 4 1
+udata_shr COMMON 1 70 70 2 1
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 24-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 24-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 87-1FFF 2
+ENTRY 87-1FFF 2
+IDLOC 2000-2003 2
+CODE 87-1FFF 2
+SFR2 10E-10F 1
+SFR3 180-18F 1
+COMMON 72-7F 1
+EEDATA 2100-21FF 2
+STRCODE 87-1FFF 2
+STRING 87-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/tmr2_intermitente.o
+0 intVect code >95:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+4 intVect code >97:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+5 intVect code >98:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+6 intVect code >99:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+7 intVect code >102:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+8 intVect code >103:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+9 intVect code >107:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+A intVect code >108:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+B intVect code >109:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+C intVect code >110:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+D intVect code >111:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+E intVect code >117:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+F intVect code >117:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+10 intVect code >117:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+11 intVect code >117:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+12 intVect code >117:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+13 intVect code >118:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+14 intVect code >119:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+15 intVect code >122:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+16 intVect code >123:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+17 intVect code >124:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+18 intVect code >127:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+0 code CODE >88:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+0 code CODE >90:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+1 code CODE >133:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+40 code CODE >136:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+41 code CODE >137:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+42 code CODE >138:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+43 code CODE >139:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+44 code CODE >140:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+45 code CODE >141:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+47 code CODE >147:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+48 code CODE >148:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+49 code CODE >149:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+4A code CODE >155:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+4C code CODE >156:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+4D code CODE >157:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+4E code CODE >159:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+50 code CODE >160:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+51 code CODE >161:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+52 code CODE >163:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+54 code CODE >164:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+55 code CODE >165:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+56 code CODE >166:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+57 code CODE >169:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+59 code CODE >170:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+5A code CODE >171:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+5B code CODE >172:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+5C code CODE >173:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+5D code CODE >174:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+5E code CODE >177:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+60 code CODE >178:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+61 code CODE >179:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+62 code CODE >181:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+64 code CODE >182:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+65 code CODE >183:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+66 code CODE >185:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+67 code CODE >186:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+68 code CODE >187:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+69 code CODE >190:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+6B code CODE >191:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+6C code CODE >192:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+6D code CODE >193:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+6E code CODE >194:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+6F code CODE >195:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+70 code CODE >196:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+71 code CODE >197:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+72 code CODE >197:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+73 code CODE >197:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+74 code CODE >197:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+75 code CODE >197:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+76 code CODE >198:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+77 code CODE >201:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+79 code CODE >202:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+7A code CODE >203:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+7B code CODE >204:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+7C code CODE >205:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+7D code CODE >207:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+7E code CODE >209:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+7F code CODE >210:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+80 code CODE >211:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+82 code CODE >211:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+83 code CODE >211:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+84 code CODE >211:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+85 code CODE >211:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+86 code CODE >212:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\Laboratorios-micros\Lab_6\lab_datcha\lab06_datcha.X\tmr2_intermitente.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 87 0 ABS 0 - -
+__Hspace_1 72 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresVect 0 0 ABS 0 resVect -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 72 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 0 0 ABS 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__LintVect 0 0 code 0 intVect -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+__HintVect 32 0 code 0 intVect -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 4 1
+udata_shr 1 70 70 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
