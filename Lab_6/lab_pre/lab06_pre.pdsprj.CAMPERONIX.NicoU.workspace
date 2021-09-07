@@ -1,12 +1,20 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <WORKSPACE>
  <FRAME activewindow="0">
+<<<<<<< Updated upstream
   <PLACEMENT>2c00000000000000010000000083ffff0083ffffffffffffffffffff2f03000086000000e909000017050000</PLACEMENT>
+=======
+  <PLACEMENT>2c00000000000000010000000083ffff0083ffffffffffffffffffffe5000000af0000009f07000040050000</PLACEMENT>
+>>>>>>> Stashed changes
   <WINDOW type="default" module="ISIS"/>
  </FRAME>
  <MODULE name="VSMDEBUG">
   <PWI>
+<<<<<<< Updated upstream
    <POPUP w="800" x="524" flags="00000002" y="264" h="200" pid="0" iid="-1">
+=======
+   <POPUP w="800" x="872" flags="00000002" y="303" h="200" pid="0" iid="-1">
+>>>>>>> Stashed changes
     <PROPERTIES>
      <ITEM name="Message Column Width">661</ITEM>
      <ITEM name="ShowGrid">No</ITEM>
@@ -14,7 +22,11 @@
      <ITEM name="Version">100</ITEM>
     </PROPERTIES>
    </POPUP>
+<<<<<<< Updated upstream
    <POPUP w="350" x="544" flags="00000032" y="284" h="200" pid="1" iid="-1">
+=======
+   <POPUP w="350" x="892" flags="00000032" y="323" h="200" pid="1" iid="-1">
+>>>>>>> Stashed changes
     <PROPERTIES>
      <ITEM name="Address Column Width">82</ITEM>
      <ITEM name="AutoResize">No</ITEM>
@@ -31,10 +43,17 @@
      <ITEM name="nItems">0</ITEM>
     </PROPERTIES>
    </POPUP>
+<<<<<<< Updated upstream
    <POPUP w="434" x="564" flags="00000008" y="304" h="216" pid="3" iid="1">
     <PROPERTIES/>
    </POPUP>
    <POPUP w="8" x="584" flags="0000000a" y="324" h="32" pid="4" iid="1">
+=======
+   <POPUP w="434" x="912" flags="00000008" y="343" h="216" pid="3" iid="1">
+    <PROPERTIES/>
+   </POPUP>
+   <POPUP w="8" x="932" flags="0000000a" y="363" h="32" pid="4" iid="1">
+>>>>>>> Stashed changes
     <PROPERTIES>
      <ITEM name="DataType">2</ITEM>
      <ITEM name="DispChars">Yes</ITEM>
@@ -44,7 +63,11 @@
      <ITEM name="TopLineAddress">00000000</ITEM>
     </PROPERTIES>
    </POPUP>
+<<<<<<< Updated upstream
    <POPUP w="8" x="604" flags="0000000a" y="344" h="32" pid="5" iid="1">
+=======
+   <POPUP w="8" x="952" flags="0000000a" y="383" h="32" pid="5" iid="1">
+>>>>>>> Stashed changes
     <PROPERTIES>
      <ITEM name="DataType">2</ITEM>
      <ITEM name="DispChars">Yes</ITEM>
@@ -54,7 +77,11 @@
      <ITEM name="TopLineAddress">00000000</ITEM>
     </PROPERTIES>
    </POPUP>
+<<<<<<< Updated upstream
    <POPUP w="16" x="624" flags="0000000a" y="364" h="32" pid="6" iid="1">
+=======
+   <POPUP w="16" x="972" flags="0000000a" y="403" h="32" pid="6" iid="1">
+>>>>>>> Stashed changes
     <PROPERTIES>
      <ITEM name="DataType">2</ITEM>
      <ITEM name="DispChars">Yes</ITEM>
@@ -64,10 +91,17 @@
      <ITEM name="TopLineAddress">00000000</ITEM>
     </PROPERTIES>
    </POPUP>
+<<<<<<< Updated upstream
    <POPUP w="130" x="644" flags="00000008" y="384" h="151" pid="7" iid="1">
     <PROPERTIES/>
    </POPUP>
    <POPUP w="8" x="664" flags="80000002" y="404" h="8" pid="8" iid="1">
+=======
+   <POPUP w="130" x="992" flags="00000008" y="423" h="151" pid="7" iid="1">
+    <PROPERTIES/>
+   </POPUP>
+   <POPUP w="8" x="1012" flags="80000002" y="443" h="8" pid="8" iid="1">
+>>>>>>> Stashed changes
     <PROPERTIES>
      <ITEM name="DataType">2</ITEM>
      <ITEM name="DispChars">Yes</ITEM>
