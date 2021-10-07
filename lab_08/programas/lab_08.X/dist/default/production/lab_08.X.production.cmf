@@ -1,0 +1,631 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\lab_08.X.production.o
+cinit CODE 0 11 11 10 2
+text1 CODE 0 272 272 3F 2
+text2 CODE 0 314 314 1A 2
+text3 CODE 0 355 355 E 2
+text4 CODE 0 342 342 13 2
+text5 CODE 0 363 363 B 2
+text6 CODE 0 36E 36E 8 2
+text7 CODE 0 32E 32E 14 2
+text8 CODE 0 21 21 73 2
+text9 CODE 0 2ED 2ED 27 2
+text10 CODE 0 2B1 2B1 3C 2
+text11 CODE 0 22C 22C 46 2
+text12 CODE 0 1D1 1D1 5B 2
+text13 CODE 0 105 105 69 2
+text14 CODE 0 16E 16E 63 2
+maintext CODE 0 94 94 71 2
+cstackCOMMON COMMON 1 70 70 8 1
+cstackBANK0 BANK0 1 20 20 13 1
+intentry CODE 0 4 4 A 2
+bssBANK0 BANK0 1 33 33 9 1
+bssCOMMON COMMON 1 78 78 1 1
+config CONFIG 4 2007 2007 2 2
+$C:\Users\nicou\AppData\Local\Temp\xcAsng.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 E E 3 2
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 3C-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 3C-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 376-1FFF 2
+ENTRY 3-3 2
+ENTRY 376-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 376-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 79-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 376-1FFF 2
+STRING 3-3 2
+STRING 376-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\lab_08.X.production.o
+11 cinit CODE >486:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+11 cinit CODE >489:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+11 cinit CODE >527:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+12 cinit CODE >530:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+13 cinit CODE >531:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+14 cinit CODE >532:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+15 cinit CODE >533:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+16 cinit CODE >534:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+17 cinit CODE >535:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+18 cinit CODE >536:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+19 cinit CODE >537:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+1A cinit CODE >538:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+1B cinit CODE >539:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+1C cinit CODE >540:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+1D cinit CODE >546:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+1D cinit CODE >548:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+1E cinit CODE >549:C:\Users\nicou\AppData\Local\Temp\xcAsng.s
+4 intentry CODE >134:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+16E text14 CODE >134:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+16E text14 CODE >135:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+174 text14 CODE >136:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+179 text14 CODE >136:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+17D text14 CODE >138:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+184 text14 CODE >139:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+185 text14 CODE >140:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+18A text14 CODE >140:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+18E text14 CODE >141:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+190 text14 CODE >143:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+191 text14 CODE >144:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+192 text14 CODE >146:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+196 text14 CODE >147:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+197 text14 CODE >148:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+198 text14 CODE >149:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+199 text14 CODE >150:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+199 text14 CODE >151:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+19B text14 CODE >152:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+19D text14 CODE >153:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+19F text14 CODE >154:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1A1 text14 CODE >155:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1A2 text14 CODE >157:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1A6 text14 CODE >158:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1A8 text14 CODE >159:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1AA text14 CODE >160:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1AC text14 CODE >161:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1AD text14 CODE >163:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1AE text14 CODE >164:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1B0 text14 CODE >165:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1B2 text14 CODE >166:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1B4 text14 CODE >167:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1B5 text14 CODE >174:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1BA text14 CODE >174:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1BF text14 CODE >174:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1C2 text14 CODE >174:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1C5 text14 CODE >174:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+1C8 text14 CODE >177:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+105 text13 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+105 text13 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+108 text13 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+10C text13 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+10F text13 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+111 text13 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+113 text13 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+117 text13 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+11A text13 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+11C text13 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+120 text13 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+122 text13 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+128 text13 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+12A text13 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+12B text13 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+12C text13 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+130 text13 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+132 text13 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+136 text13 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+13A text13 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+13B text13 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+13F text13 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+141 text13 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+143 text13 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+147 text13 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+14B text13 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+14E text13 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+151 text13 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+152 text13 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+153 text13 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+157 text13 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+159 text13 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+15F text13 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+164 text13 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+167 text13 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+169 text13 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+16D text13 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+1D1 text12 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1D1 text12 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1D2 text12 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1D8 text12 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1DB text12 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1DD text12 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1DF text12 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1E3 text12 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1E6 text12 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1E8 text12 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1EE text12 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1F0 text12 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1F1 text12 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1F2 text12 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1F6 text12 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1F8 text12 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1FC text12 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+200 text12 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+202 text12 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+206 text12 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+20A text12 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+20D text12 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+210 text12 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+211 text12 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+215 text12 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+217 text12 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+21D text12 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+222 text12 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+225 text12 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+227 text12 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+22B text12 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+22C text11 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+22C text11 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+230 text11 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+236 text11 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+238 text11 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+239 text11 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+23A text11 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+23E text11 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+240 text11 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+244 text11 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+248 text11 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+249 text11 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+24D text11 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+24F text11 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+251 text11 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+255 text11 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+259 text11 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+25C text11 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+25F text11 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+260 text11 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+261 text11 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+265 text11 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+267 text11 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+26D text11 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+271 text11 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+2B1 text10 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2B1 text10 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2B9 text10 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2BB text10 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2BC text10 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2BD text10 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2C1 text10 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2C3 text10 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2C7 text10 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2CB text10 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2CD text10 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2D1 text10 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2D5 text10 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2D8 text10 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2DB text10 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2DC text10 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2E0 text10 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2E2 text10 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2E8 text10 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2EC text10 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2ED text9 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+2ED text9 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+2EF text9 CODE >45:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+2F5 text9 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+2F7 text9 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+2FB text9 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+2FC text9 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+300 text9 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+302 text9 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+303 text9 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+307 text9 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+309 text9 CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+30F text9 CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+313 text9 CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+21 text8 CODE >244:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+21 text8 CODE >246:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+45 text8 CODE >248:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+52 text8 CODE >249:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+67 text8 CODE >250:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+7D text8 CODE >251:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+93 text8 CODE >253:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+32E text7 CODE >220:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+32E text7 CODE >221:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+331 text7 CODE >223:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+337 text7 CODE >224:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+338 text7 CODE >225:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+33C text7 CODE >226:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+341 text7 CODE >228:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+36E text6 CODE >201:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+36E text6 CODE >202:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+374 text6 CODE >203:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+375 text6 CODE >205:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+363 text5 CODE >207:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+363 text5 CODE >208:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+366 text5 CODE >209:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+369 text5 CODE >211:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+36A text5 CODE >212:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+36B text5 CODE >213:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+36C text5 CODE >214:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+36D text5 CODE >218:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+342 text4 CODE >185:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+342 text4 CODE >186:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+346 text4 CODE >187:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+347 text4 CODE >189:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+34A text4 CODE >190:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+34B text4 CODE >191:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+34C text4 CODE >192:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+34E text4 CODE >194:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+351 text4 CODE >195:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+352 text4 CODE >196:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+353 text4 CODE >197:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+354 text4 CODE >199:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+355 text3 CODE >230:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+355 text3 CODE >231:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+358 text3 CODE >232:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+359 text3 CODE >233:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+35A text3 CODE >234:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+35E text3 CODE >235:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+362 text3 CODE >237:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+314 text2 CODE >69:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+314 text2 CODE >70:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+319 text2 CODE >71:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+31E text2 CODE >72:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+323 text2 CODE >73:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+328 text2 CODE >74:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+32D text2 CODE >76:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+272 text1 CODE >259:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+273 text1 CODE >261:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+274 text1 CODE >264:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+276 text1 CODE >267:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+278 text1 CODE >270:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+27A text1 CODE >273:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+27C text1 CODE >276:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+27E text1 CODE >279:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+280 text1 CODE >282:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+282 text1 CODE >285:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+284 text1 CODE >288:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+286 text1 CODE >291:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+288 text1 CODE >296:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+28D text1 CODE >296:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+292 text1 CODE >296:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+295 text1 CODE >296:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+298 text1 CODE >296:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+29B text1 CODE >296:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+29E text1 CODE >296:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+2A1 text1 CODE >296:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+2A4 text1 CODE >296:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+2A7 text1 CODE >296:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+2AA text1 CODE >296:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+2AD text1 CODE >296:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+2B0 text1 CODE >297:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+94 maintext CODE >91:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+94 maintext CODE >92:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+99 maintext CODE >94:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+9C maintext CODE >97:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+A1 maintext CODE >100:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+A5 maintext CODE >101:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+AC maintext CODE >102:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+B0 maintext CODE >103:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+B1 maintext CODE >105:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+B5 maintext CODE >106:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+BC maintext CODE >107:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+BF maintext CODE >108:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+C0 maintext CODE >110:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+C5 maintext CODE >114:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+CA maintext CODE >114:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+CF maintext CODE >114:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+D2 maintext CODE >114:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+D5 maintext CODE >116:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+D6 maintext CODE >117:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+D7 maintext CODE >119:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+E0 maintext CODE >121:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+EB maintext CODE >122:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+F6 maintext CODE >123:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab_08\programas\lab_08.X\post_DAC.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\lab_08.X.production.o
+___awdiv@counter 24 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+___lwmod@counter 76 0 COMMON 1 cstackCOMMON dist/default/production\lab_08.X.production.o
+divizion_m@redivisor_m 30 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+__Hspace_0 376 0 ABS 0 - -
+__Hspace_1 79 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+tabla_7seg@uwu 77 0 COMMON 1 cstackCOMMON dist/default/production\lab_08.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+_TMR0 1 0 ABS 0 - dist/default/production\lab_08.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\nicou\AppData\Local\Temp\xcAsng.o
+_main 128 0 CODE 0 maintext dist/default/production\lab_08.X.production.o
+_pepa 35 0 BANK0 1 bssBANK0 dist/default/production\lab_08.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\lab_08.X.production.o
+start 1C 0 CODE 0 init C:\Users\nicou\AppData\Local\Temp\xcAsng.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+?___wmul 20 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__size_of_config_ADC 0 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+_display0 36 0 BANK0 1 bssBANK0 dist/default/production\lab_08.X.production.o
+_display1 37 0 BANK0 1 bssBANK0 dist/default/production\lab_08.X.production.o
+_display2 38 0 BANK0 1 bssBANK0 dist/default/production\lab_08.X.production.o
+___awmod@sign 77 0 COMMON 1 cstackCOMMON dist/default/production\lab_08.X.production.o
+divizion_m@kak 2B 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\nicou\AppData\Local\Temp\xcAsng.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\nicou\AppData\Local\Temp\xcAsng.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\nicou\AppData\Local\Temp\xcAsng.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\nicou\AppData\Local\Temp\xcAsng.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\nicou\AppData\Local\Temp\xcAsng.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\nicou\AppData\Local\Temp\xcAsng.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OSCCONbits 8F 0 ABS 0 - dist/default/production\lab_08.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+___awdiv@sign 25 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_config_ie 6DC 0 CODE 0 text5 dist/default/production\lab_08.X.production.o
+__end_of_config_io 6AA 0 CODE 0 text4 dist/default/production\lab_08.X.production.o
+__size_of_config_ie 0 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__size_of_config_io 0 0 ABS 0 - dist/default/production\lab_08.X.production.o
+___wmul@multiplicand 22 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+_ADCON1 9F 0 ABS 0 - dist/default/production\lab_08.X.production.o
+_ADRESH 1E 0 ABS 0 - dist/default/production\lab_08.X.production.o
+_ANSELH 189 0 ABS 0 - dist/default/production\lab_08.X.production.o
+___awdiv@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+_tabla_7seg 4E4 0 CODE 0 text1 dist/default/production\lab_08.X.production.o
+__end_of___wmul 628 0 CODE 0 text9 dist/default/production\lab_08.X.production.o
+__size_of_config_tmr0 0 0 ABS 0 - dist/default/production\lab_08.X.production.o
+_config_ie 6C6 0 CODE 0 text5 dist/default/production\lab_08.X.production.o
+_config_io 684 0 CODE 0 text4 dist/default/production\lab_08.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+___awdiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+___lwmod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+__end_of___awdiv 2DC 0 CODE 0 text13 dist/default/production\lab_08.X.production.o
+__end_of___awmod 458 0 CODE 0 text12 dist/default/production\lab_08.X.production.o
+__end_of___lwdiv 4E4 0 CODE 0 text11 dist/default/production\lab_08.X.production.o
+__end_of___lwmod 5DA 0 CODE 0 text10 dist/default/production\lab_08.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\nicou\AppData\Local\Temp\xcAsng.o
+___stacklo 0 0 ABS 0 - C:\Users\nicou\AppData\Local\Temp\xcAsng.o
+___lwdiv@quotient 29 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+__size_of_setup 0 0 ABS 0 - dist/default/production\lab_08.X.production.o
+___lwmod@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+start_initialization 22 0 CODE 0 cinit dist/default/production\lab_08.X.production.o
+__end_of_tabla_7seg 562 0 CODE 0 text1 dist/default/production\lab_08.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+_divizion_m 42 0 CODE 0 text8 dist/default/production\lab_08.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\nicou\AppData\Local\Temp\xcAsng.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 42 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+___lwdiv@counter 28 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 22 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+_INTCONbits B 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 1C 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 1C 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+___wmul 5DA 0 CODE 0 text9 dist/default/production\lab_08.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 376 0 ABS 0 - -
+__S1 79 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_dec 3A 0 BANK0 1 bssBANK0 dist/default/production\lab_08.X.production.o
+_isr 2DC 0 CODE 0 text14 dist/default/production\lab_08.X.production.o
+_uni 39 0 BANK0 1 bssBANK0 dist/default/production\lab_08.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__end_of_divizion_m 128 0 CODE 0 text8 dist/default/production\lab_08.X.production.o
+__end_of_isr 3A2 0 CODE 0 text14 dist/default/production\lab_08.X.production.o
+_config_clock 6DC 0 CODE 0 text6 dist/default/production\lab_08.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\nicou\AppData\Local\Temp\xcAsng.o
+_config_tmr0 6AA 0 CODE 0 text3 dist/default/production\lab_08.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+___awmod@counter 76 0 COMMON 1 cstackCOMMON dist/default/production\lab_08.X.production.o
+_PIE1bits 8C 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__ptext10 562 0 CODE 0 text10 dist/default/production\lab_08.X.production.o
+__ptext11 458 0 CODE 0 text11 dist/default/production\lab_08.X.production.o
+__ptext12 3A2 0 CODE 0 text12 dist/default/production\lab_08.X.production.o
+__ptext13 20A 0 CODE 0 text13 dist/default/production\lab_08.X.production.o
+__ptext14 2DC 0 CODE 0 text14 dist/default/production\lab_08.X.production.o
+___awdiv 20A 0 CODE 0 text13 dist/default/production\lab_08.X.production.o
+___awmod 3A2 0 CODE 0 text12 dist/default/production\lab_08.X.production.o
+___lwdiv 458 0 CODE 0 text11 dist/default/production\lab_08.X.production.o
+___lwmod 562 0 CODE 0 text10 dist/default/production\lab_08.X.production.o
+__pmaintext 128 0 CODE 0 maintext dist/default/production\lab_08.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+___wmul@multiplier 20 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+__size_of_config_clock 0 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__size_of_tabla_7seg 0 0 ABS 0 - dist/default/production\lab_08.X.production.o
+_config_ADC 65C 0 CODE 0 text7 dist/default/production\lab_08.X.production.o
+___lwdiv@divisor 24 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+_voltaje 33 0 BANK0 1 bssBANK0 dist/default/production\lab_08.X.production.o
+_ADCON0bits 1F 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 78 0 COMMON 1 bssCOMMON dist/default/production\lab_08.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__end_of_config_clock 6EC 0 CODE 0 text6 dist/default/production\lab_08.X.production.o
+_PIR1bits C 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__Lend_init 1C 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 3A 0 CODE 0 cinit dist/default/production\lab_08.X.production.o
+__Hintentry 1C 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 26 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+?___awdiv 20 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+?___awmod 20 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+___lwdiv@dividend 26 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+?___lwdiv 24 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+?___lwmod 20 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+___awmod@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+__ptext1 4E4 0 CODE 0 text1 dist/default/production\lab_08.X.production.o
+__ptext2 628 0 CODE 0 text2 dist/default/production\lab_08.X.production.o
+__ptext3 6AA 0 CODE 0 text3 dist/default/production\lab_08.X.production.o
+__ptext4 684 0 CODE 0 text4 dist/default/production\lab_08.X.production.o
+__ptext5 6C6 0 CODE 0 text5 dist/default/production\lab_08.X.production.o
+__ptext6 6DC 0 CODE 0 text6 dist/default/production\lab_08.X.production.o
+__ptext7 65C 0 CODE 0 text7 dist/default/production\lab_08.X.production.o
+__ptext8 42 0 CODE 0 text8 dist/default/production\lab_08.X.production.o
+__ptext9 5DA 0 CODE 0 text9 dist/default/production\lab_08.X.production.o
+__end_of_config_ADC 684 0 CODE 0 text7 dist/default/production\lab_08.X.production.o
+_transistor 78 0 COMMON 1 bssCOMMON dist/default/production\lab_08.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__size_of_divizion_m 0 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__end_of__initialization 3A 0 CODE 0 cinit dist/default/production\lab_08.X.production.o
+___awmod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\lab_08.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\lab_08.X.production.o
+__Hend_init 22 0 CODE 0 end_init -
+__end_of_main 20A 0 CODE 0 maintext dist/default/production\lab_08.X.production.o
+_ANSEL 188 0 ABS 0 - dist/default/production\lab_08.X.production.o
+_PORTA 5 0 ABS 0 - dist/default/production\lab_08.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\lab_08.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\lab_08.X.production.o
+_PORTE 9 0 ABS 0 - dist/default/production\lab_08.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\lab_08.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\lab_08.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\lab_08.X.production.o
+_TRISE 89 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__end_of_setup 65C 0 CODE 0 text2 dist/default/production\lab_08.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\lab_08.X.production.o
+_setup 628 0 CODE 0 text2 dist/default/production\lab_08.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\lab_08.X.production.o
+__size_of_isr 0 0 ABS 0 - dist/default/production\lab_08.X.production.o
+__initialization 22 0 CODE 0 cinit dist/default/production\lab_08.X.production.o
+__pbssBANK0 33 0 BANK0 1 bssBANK0 dist/default/production\lab_08.X.production.o
+__end_of_config_tmr0 6C6 0 CODE 0 text3 dist/default/production\lab_08.X.production.o
+___wmul@product 75 0 COMMON 1 cstackCOMMON dist/default/production\lab_08.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMMON 1 70 70 9 1
+cstackBANK0 1 20 20 1C 1
+intentry 0 4 8 372 2
+reset_vec 0 0 0 3 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
